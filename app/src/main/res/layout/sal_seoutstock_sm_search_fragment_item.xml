@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_fqty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数量：100"
+        android:textColor="@color/c_666666"
+        android:textSize="@dimen/_14sp" />
+
+    <TextView
+        android:id="@+id/tv_deliveryNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="SEOUT1002345"
+        android:textColor="@color/c_6a5acd"
+        android:textSize="@dimen/_16sp" />
+
+    <TextView
+        android:id="@+id/tv_row"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/c_666666"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sp" />
+
+    <TextView
+        android:id="@+id/tv_stockQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已发货：20"
+        android:layout_below="@+id/tv_deliveryNo"
+        android:textColor="@color/c_666666"
+        android:textSize="@dimen/_14sp" />
+
+    <TextView
+        android:id="@+id/tv_unStockQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_36dp"
+        android:text="未发货：80"
+        android:layout_toRightOf="@+id/tv_stockQty"
+        android:layout_below="@+id/tv_deliveryNo"
+        android:textColor="@color/c_666666"
+        android:textSize="@dimen/_14sp" />
+
+    <TextView
+        android:id="@+id/tv_fdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_deliveryNo"
+        android:text="日期：2012-12-12"
+        android:textColor="@color/c_666666"
+        android:textSize="@dimen/_14sp" />
+
+
+
+
+</RelativeLayout>

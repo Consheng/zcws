@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="王小二"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sp" />
+
+    <TextView
+        android:id="@+id/tv_deliveryNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEOUT1002345"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/c_6a5acd"
+        android:textSize="@dimen/_16sp" />
+
+    <TextView
+        android:id="@+id/tv_row"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/c_666666"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sp" />
+
+    <TextView
+        android:id="@+id/tv_nodeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不要凉了,赶紧上DJ"
+        android:layout_marginRight="138dp"
+        android:layout_below="@+id/tv_deliveryNo"
+        android:textColor="@color/c_FF4400"
+        android:textSize="@dimen/_14sp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_deliveryNo"
+        android:maxLength="19"
+        android:text="2012-12-12 12:12:12"
+        android:textColor="@color/c_666666"
+        android:textSize="@dimen/_14sp" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/btn_blue2_selector"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_1dp"
+                android:text="综合账号"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="@dimen/_1dp"
+                android:background="@drawable/btn_blue2_selector"
+                android:gravity="center"
+                android:text="电商账号"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="@dimen/_1dp"
+                android:background="@drawable/btn_blue2_selector"
+                android:gravity="center"
+                android:text="线束账号"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/c_eaeaea" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

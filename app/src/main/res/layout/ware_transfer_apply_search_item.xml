@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3dp">
+
+
+    <TextView
+        android:id="@+id/tv_row"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:background="@color/c_666666"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sp" />
+
+    <TextView
+        android:id="@+id/tv_billNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="DD00001044"
+        android:textColor="@color/c_FF4400"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_execStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="未调拨拣货"
+        android:textColor="@color/c_515151"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="物料个数：10"
+        android:layout_below="@+id/tv_execStatus"
+        android:textColor="@color/c_666666"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_createUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="张三"
+        android:layout_below="@+id/tv_execStatus"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="19"
+        android:layout_alignParentRight="true"
+        android:text="2020-03-14"
+        android:layout_below="@+id/tv_execStatus"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_style_gray2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_6dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="单据编号："
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_mtlName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="物料名称："
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="@color/c_d8d8d8">
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="行号"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="检查项目"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="@dimen/_52dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="检验数"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="@dimen/_52dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="合格数"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="@dimen/_52dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="不良数"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sp" />
+
+    </LinearLayout>
+
+    <ykk.cb.com.zcws.util.xrecyclerview.XRecyclerView
+        android:id="@+id/xRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_1dp"
+        android:layout_marginRight="@dimen/_1dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:overScrollMode="never" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0.5dp"
+        android:background="@color/c_d8d8d8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/_26dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="小计："
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_countNum1"
+            android:layout_width="@dimen/_52dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_countNum2"
+            android:layout_width="@dimen/_52dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_1dp"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_countNum3"
+            android:layout_width="@dimen/_52dp"
+            android:layout_marginLeft="@dimen/_1dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0.5dp"
+        android:background="@color/c_d8d8d8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45dp"
+        android:layout_margin="@dimen/_12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_gray1_selector"
+            android:text="关闭"
+            android:textColor="@color/c_666666"
+            android:textSize="@dimen/_14sp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_purple_selector"
+            android:text="提交\n(检验中)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sp" />
+
+        <Button
+            android:id="@+id/btn_submit2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_blue_selector"
+            android:text="提交\n(已完成)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
