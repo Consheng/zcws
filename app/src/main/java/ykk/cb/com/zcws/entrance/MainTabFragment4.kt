@@ -50,7 +50,8 @@ class MainTabFragment4 : BaseFragment() {
                 bundle.putString("billType", "ZH_DBD")
                 show(OutInStock_Search_MainActivity::class.java, bundle)
             }
-            R.id.relative9 -> { // 待上传
+            R.id.relative9 -> { // 物料位置移动
+                show(MaterialPositionMoveActivity::class.java, bundle)
             }
         }
     }

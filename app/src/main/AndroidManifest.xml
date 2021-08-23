@@ -15,6 +15,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <!-- 8.0、9.0需要请求未知来源应用安装权限，不加就好出现安装后直接退出 -->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!--使用特性-->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:name=".comm.MyApplication"
@@ -172,6 +175,9 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".warehouse.ICInvBackup_MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".warehouse.MaterialPositionMoveActivity"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <!-- 采购模块 -->

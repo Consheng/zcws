@@ -1080,7 +1080,7 @@ class Pur_Receive_InStock_Fragment2 : BaseFragment() {
             override fun onResponse(call: Call, response: Response) {
                 val body = response.body()
                 val result = body.string()
-                LogUtil.e("run_findListByParamWms --> onResponse", result)
+                LogUtil.e("run_findInventoryQty --> onResponse", result)
                 if (!JsonUtil.isSuccess(result)) {
                     val msg = mHandler.obtainMessage(UNSUCC2, result)
                     mHandler.sendMessage(msg)

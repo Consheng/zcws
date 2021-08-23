@@ -72,7 +72,7 @@ public class ICItem implements Serializable{
 
 	// 临时字段，不加表
 	private double inventoryQty; // 即时库存
-	private String FHelpCode; //助记码
+	private String fhelpCode; //助记码
 	private boolean check; // 是否选中
 	private String smBatchCode; // 扫描的批次号
 	private String smSnCode; // 扫描的序列号
@@ -283,12 +283,12 @@ public class ICItem implements Serializable{
 		this.inventoryQty = inventoryQty;
 	}
 
-	public String getFHelpCode() {
-		return FHelpCode;
+	public String getFhelpCode() {
+		return fhelpCode;
 	}
 
-	public void setFHelpCode(String FHelpCode) {
-		this.FHelpCode = FHelpCode;
+	public void setFhelpCode(String fhelpCode) {
+		this.fhelpCode = fhelpCode;
 	}
 
 	public boolean isCheck() {
